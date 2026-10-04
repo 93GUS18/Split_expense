@@ -1,0 +1,19 @@
+.delete-group-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  min-height: 40px;
+  margin-top: 10px;
+  border: 1px solid #efd8d3;
+  border-radius: 7px;
+  background: #fff8f6;
+  color: #a5483c;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.delete-group-form:hover {
+  background: #fff0ec;
+}

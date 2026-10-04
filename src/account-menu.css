@@ -1,0 +1,120 @@
+.account-menu {
+  position: absolute;
+  z-index: 5;
+  top: 58px;
+  right: 10px;
+  width: min(260px, calc(100% - 24px));
+  padding: 10px;
+  border: 1px solid #e3e9df;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 12px 32px #243b3026;
+}
+
+.account-menu-heading {
+  margin: 2px 8px 7px;
+  color: #84918a;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.account-menu-item {
+  display: grid;
+  grid-template-columns: 25px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  width: 100%;
+  padding: 9px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  text-align: left;
+}
+
+.account-menu-item:hover,
+.account-menu-item.selected {
+  background: #f1f5ed;
+}
+
+.account-menu-item > span {
+  grid-row: 1 / span 2;
+  display: flex;
+  align-items: center;
+  color: #567d70;
+}
+
+.account-menu-item b {
+  color: #29483e;
+  font-size: 12px;
+}
+
+.account-menu-item small {
+  overflow: hidden;
+  color: #84918a;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.account-menu-divider {
+  height: 1px;
+  margin: 7px 2px;
+  background: #e9ece6;
+}
+
+.account-menu-link {
+  display: grid;
+  grid-template-columns: 25px minmax(0, 1fr) 16px;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  min-height: 38px;
+  padding: 5px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #52675c;
+  font-size: 11px;
+  text-align: left;
+}
+
+.account-menu-link:hover {
+  background: #f1f5ed;
+}
+
+.account-menu-link > svg:first-child,
+.account-menu-link > svg:last-child {
+  color: #809087;
+}
+
+.account-menu-avatar {
+  display: grid;
+  width: 23px;
+  height: 23px;
+  place-items: center;
+  border-radius: 50%;
+  background: #e5d9c4;
+  color: #3c574d;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.delete-group-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  min-height: 40px;
+  margin-top: 10px;
+  border: 1px solid #efd8d3;
+  border-radius: 7px;
+  background: #fff8f6;
+  color: #a5483c;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.delete-group-form:hover {
+  background: #fff0ec;
+}
