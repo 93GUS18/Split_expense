@@ -1,0 +1,488 @@
+.app-shell[data-theme-color='orange'] { --theme-accent: #e87932; }
+.app-shell[data-theme-color='ocean'] { --theme-accent: #427b91; }
+.app-shell[data-theme-color='coral'] { --theme-accent: #bd6e54; }
+.app-shell[data-theme-color='gold'] { --theme-accent: #a58135; }
+
+.app-shell[data-theme-color] .nav-item.active,
+.app-shell[data-theme-color] .nav-item.active .nav-icon,
+.app-shell[data-theme-color] .text-action,
+.app-shell[data-theme-color] .see-all,
+.app-shell[data-theme-color] .welcome-row em,
+.app-shell[data-theme-color] .page-title em {
+  color: var(--theme-accent);
+}
+
+.app-shell[data-theme-color] .primary-button,
+.app-shell[data-theme-color] .toast,
+.app-shell[data-theme-color] .brand-mark,
+.app-shell[data-theme-color] .nav-add,
+.app-shell[data-theme-color] .round-add {
+  background-color: var(--theme-accent);
+}
+
+.app-shell[data-theme-color] .brand-mark,
+.app-shell[data-theme-color] .nav-add,
+.app-shell[data-theme-color] .round-add {
+  color: #fff;
+}
+
+.app-shell[data-theme-color] .settings-shortcut {
+  color: var(--theme-accent);
+}
+
+.app-shell[data-theme-color] .balance-panel {
+  background-color: color-mix(in srgb, var(--theme-accent) 56%, #24443d);
+}
+
+.settings-preference {
+  padding: 13px 0;
+  border-top: 1px solid var(--line);
+}
+
+.preference-label {
+  margin: 0 0 9px;
+  color: #52675c;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.preference-hint {
+  display: block;
+  margin-top: 7px;
+  color: #84918a;
+  font-size: 9px;
+}
+
+.mode-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 3px;
+  border: 1px solid #e4e9e1;
+  border-radius: 7px;
+  background: #f1f4ee;
+}
+
+.mode-option {
+  min-height: 32px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: #748279;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.mode-option.selected {
+  background: #fff;
+  color: var(--theme-accent, #567d70);
+  box-shadow: 0 1px 3px #20382e1c;
+}
+
+.settings-row.currency-row select {
+  margin-left: auto;
+  border: 1px solid #e4e9e1;
+  border-radius: 6px;
+  padding: 6px 8px;
+  background: #fff;
+  color: #52675c;
+}
+
+.drive-storage {
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+.drive-storage-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--theme-accent);
+}
+
+.drive-storage-heading > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.drive-storage-heading b {
+  color: #52675c;
+  font-size: 11px;
+}
+
+.drive-storage-heading span,
+.drive-status,
+.drive-help {
+  color: #84918a;
+  font-size: 9px;
+}
+
+.drive-status {
+  min-height: 12px;
+  margin: 9px 0;
+}
+
+.drive-action {
+  margin-top: 0;
+}
+
+.drive-help {
+  margin: 9px 0 0;
+  line-height: 1.5;
+}
+
+.drive-instructions {
+  margin-top: 9px;
+  color: #738178;
+  font-size: 9px;
+}
+
+.drive-instructions summary {
+  color: var(--theme-accent);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.drive-instructions ol {
+  display: grid;
+  gap: 5px;
+  margin: 8px 0 0;
+  padding-left: 18px;
+  line-height: 1.5;
+}
+
+.signout-row {
+  margin-top: 8px;
+  border-bottom: 1px solid var(--line);
+  color: #a5483c;
+}
+
+.drive-account-status svg {
+  color: var(--theme-accent);
+}
+
+.app-shell[data-theme='dark'] {
+  background-color: #000;
+  background-image: none;
+  color: #e5ede7;
+}
+
+.app-shell[data-theme='dark'] .phone-frame {
+  --ink: #e5ede7;
+  --line: #36443b;
+  --paper: #1c2721;
+  background: #000;
+  color: #e5ede7;
+  box-shadow: 0 18px 65px #0007, 0 1px 4px #0005;
+}
+
+.app-shell[data-theme='dark'] .topbar,
+.app-shell[data-theme='dark'] .bottom-nav {
+  border-color: #36443b;
+  background-color: #050505f5;
+}
+
+.app-shell[data-theme='dark'] .brand,
+.app-shell[data-theme='dark'] .welcome-row h1,
+.app-shell[data-theme='dark'] .page-title,
+.app-shell[data-theme='dark'] .section-heading h2,
+.app-shell[data-theme='dark'] .modal-heading h2,
+.app-shell[data-theme='dark'] .detail-list-heading h3,
+.app-shell[data-theme='dark'] .profile-card h2 {
+  color: #e5ede7;
+}
+
+.app-shell[data-theme='dark'] .eyebrow,
+.app-shell[data-theme='dark'] .group-meta,
+.app-shell[data-theme='dark'] .expense-meta,
+.app-shell[data-theme='dark'] .settings-profile span,
+.app-shell[data-theme='dark'] .settings-note,
+.app-shell[data-theme='dark'] .profile-footnote,
+.app-shell[data-theme='dark'] .soft-label {
+  color: #a1b0a6;
+}
+
+.app-shell[data-theme='dark'] .balance-panel {
+  background-color: color-mix(in srgb, var(--theme-accent) 48%, #18231d);
+}
+
+.app-shell[data-theme='dark'] .search-wrap,
+.app-shell[data-theme='dark'] .mode-options,
+.app-shell[data-theme='dark'] .split-option,
+.app-shell[data-theme='dark'] .account-action,
+.app-shell[data-theme='dark'] .invite-action {
+  border-color: #39483e;
+  background-color: #25322b;
+  color: #d5e0d8;
+}
+
+.app-shell[data-theme='dark'] .search-wrap input,
+.app-shell[data-theme='dark'] .field-label input,
+.app-shell[data-theme='dark'] .field-label select,
+.app-shell[data-theme='dark'] .field-label textarea,
+.app-shell[data-theme='dark'] .settings-row.currency-row select {
+  border-color: #425248;
+  background-color: #202c25;
+  color: #e5ede7;
+}
+
+.app-shell[data-theme='dark'] .search-wrap input::placeholder,
+.app-shell[data-theme='dark'] .field-label input::placeholder,
+.app-shell[data-theme='dark'] .field-label textarea::placeholder {
+  color: #96a79b;
+}
+
+.app-shell[data-theme='dark'] .search-wrap kbd,
+.app-shell[data-theme='dark'] .mode-option.selected {
+  border-color: #435349;
+  background-color: #34453a;
+  color: #e5ede7;
+}
+
+.app-shell[data-theme='dark'] .group-row:hover,
+.app-shell[data-theme='dark'] .expense-row:hover {
+  background-color: #25332b;
+}
+
+.app-shell[data-theme='dark'] .expense-title,
+.app-shell[data-theme='dark'] .group-name,
+.app-shell[data-theme='dark'] .paid-line,
+.app-shell[data-theme='dark'] .split-person,
+.app-shell[data-theme='dark'] .allocation-row,
+.app-shell[data-theme='dark'] .field-label,
+.app-shell[data-theme='dark'] .settings-row,
+.app-shell[data-theme='dark'] .account-action {
+  color: #dce7df;
+}
+
+.app-shell[data-theme='dark'] .modal-backdrop {
+  background: #070b09b8;
+}
+
+.app-shell[data-theme='dark'] .modal-sheet {
+  background: #101010;
+  color: #e5ede7;
+}
+
+.app-shell[data-theme='dark'] .drive-storage {
+  border-color: #39483e;
+}
+
+.app-shell[data-theme='dark'] .drive-storage-heading b {
+  color: #dce7df;
+}
+
+.app-shell[data-theme='dark'] .drive-storage-heading span,
+.app-shell[data-theme='dark'] .drive-status,
+.app-shell[data-theme='dark'] .drive-help,
+.app-shell[data-theme='dark'] .drive-instructions {
+  color: #a1b0a6;
+}
+
+.app-shell[data-theme='dark'] .member-chip,
+.app-shell[data-theme='dark'] .note-card,
+.app-shell[data-theme='dark'] .split-summary,
+.app-shell[data-theme='dark'] .allocations,
+.app-shell[data-theme='dark'] .receipt-upload,
+.app-shell[data-theme='dark'] .profile-card {
+  border-color: #39483e;
+  background-color: #25322b;
+  color: #dce7df;
+}
+
+.app-shell[data-theme='dark'] .split-option.selected {
+  border-color: var(--theme-accent);
+  background-color: color-mix(in srgb, var(--theme-accent) 25%, #202c25);
+  color: #e5ede7;
+}
+
+.app-shell[data-theme='dark'] .settings-preference,
+.app-shell[data-theme='dark'] .settings-row,
+.app-shell[data-theme='dark'] .profile-card {
+  border-color: #39483e;
+}
+
+.app-shell[data-theme='dark'] .preference-label {
+  color: #dce7df;
+}
+
+.app-shell[data-theme='dark'] .settings-row.currency-row select option {
+  background: #202c25;
+  color: #e5ede7;
+}
+
+.app-shell[data-theme='dark'] .delete-group-form {
+  border-color: #70453f;
+  background: #382925;
+  color: #f0aaa0;
+}
+
+.app-shell[data-theme='dark'] .empty-state {
+  color: #a1b0a6;
+}
+
+.app-shell[data-theme='dark'] .primary-button:hover {
+  filter: brightness(1.12);
+}
+
+.phone-frame > .topbar {
+  width: calc(100% + 46px);
+  margin-left: -23px;
+  padding: 0 23px;
+}
+
+.phone-frame {
+  border-radius: 0;
+}
+
+.app-shell .modal-sheet {
+  border-radius: 16px;
+}
+
+.app-shell[data-theme='dark'] .phone-frame > .topbar {
+  background: #000;
+}
+
+.hero-dates {
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin-top: 5px;
+  color: #edf2e7;
+  font-size: 10px;
+}
+
+@media (max-width: 360px) {
+  .phone-frame > .topbar {
+    width: calc(100% + 34px);
+    margin-left: -17px;
+    padding-right: 17px;
+    padding-left: 17px;
+  }
+}
+
+.app-shell[data-theme-color] .search-wrap {
+  border-color: color-mix(in srgb, var(--theme-accent) 30%, #edf0e9);
+  background: color-mix(in srgb, var(--theme-accent) 8%, #f7f6f3);
+}
+
+.app-shell[data-theme-color] .search-wrap:focus-within {
+  border-color: var(--theme-accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-accent) 18%, transparent);
+}
+
+.app-shell[data-theme-color] .search-wrap kbd {
+  border-color: color-mix(in srgb, var(--theme-accent) 25%, #dce2da);
+}
+
+.app-shell[data-theme-color] .mode-options {
+  border-color: color-mix(in srgb, var(--theme-accent) 32%, #e4e9e1);
+  background: color-mix(in srgb, var(--theme-accent) 9%, #f7f6f3);
+}
+
+.app-shell[data-theme-color] .mode-option.selected {
+  background: var(--theme-accent);
+  color: #fff;
+  box-shadow: 0 1px 3px #20382e26;
+}
+
+.app-shell[data-theme-color] .field-label input,
+.app-shell[data-theme-color] .field-label select,
+.app-shell[data-theme-color] .field-label textarea,
+.app-shell[data-theme-color] .invite-input {
+  border-color: color-mix(in srgb, var(--theme-accent) 38%, #e2e8df);
+  background: color-mix(in srgb, var(--theme-accent) 6%, #fbfaf7);
+  color: var(--ink);
+}
+
+.app-shell[data-theme-color] .invite-input input {
+  background: transparent;
+  color: var(--ink);
+}
+
+.app-shell[data-theme-color] .invite-input button {
+  color: var(--theme-accent);
+}
+
+.app-shell[data-theme-color] .field-label input:focus,
+.app-shell[data-theme-color] .field-label select:focus,
+.app-shell[data-theme-color] .field-label textarea:focus,
+.app-shell[data-theme-color] .invite-input:focus-within {
+  border-color: var(--theme-accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-accent) 20%, transparent);
+}
+
+.activity-filters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 16px 0 8px;
+}
+
+.activity-filters label {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.activity-filters select {
+  width: 100%;
+  min-width: 0;
+  height: 34px;
+  padding: 0 7px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--theme-accent) 34%, #e2e8df);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--theme-accent) 6%, #fbfaf7);
+  color: var(--ink);
+  font-size: 9px;
+  text-overflow: ellipsis;
+}
+
+.app-shell[data-theme='dark'] .search-wrap,
+.app-shell[data-theme='dark'] .mode-options {
+  border-color: color-mix(in srgb, var(--theme-accent) 38%, #292929);
+  background: #101010;
+}
+
+.app-shell[data-theme='dark'] .field-label input,
+.app-shell[data-theme='dark'] .field-label select,
+.app-shell[data-theme='dark'] .field-label textarea,
+.app-shell[data-theme='dark'] .invite-input {
+  border-color: color-mix(in srgb, var(--theme-accent) 35%, #303030);
+  background: #101010;
+  color: #f1ede8;
+}
+
+.app-shell[data-theme='dark'] .activity-filters select {
+  border-color: color-mix(in srgb, var(--theme-accent) 36%, #303030);
+  background: #101010;
+  color: #f1ede8;
+}
+
+.app-shell[data-theme='dark'] .invite-input input {
+  background: transparent;
+  color: #f1ede8;
+}
+
+.app-shell[data-theme='dark'] .invite-input input::placeholder {
+  color: #a59b92;
+}
+
+.app-shell[data-theme='dark'] .invite-input button {
+  color: var(--theme-accent);
+}
+
+.app-shell[data-theme='dark'] .search-wrap:focus-within {
+  border-color: var(--theme-accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-accent) 25%, transparent);
+}
+
+.app-shell[data-theme='dark'] .mode-option.selected {
+  border-color: var(--theme-accent);
+  background: var(--theme-accent);
+  color: #fff;
+}

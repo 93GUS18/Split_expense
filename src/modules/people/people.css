@@ -1,0 +1,49 @@
+.people-list {
+  margin-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.people-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 58px;
+  border-bottom: 1px solid var(--line);
+}
+
+.people-row > i {
+  display: grid;
+  width: 31px;
+  height: 31px;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.people-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.people-row b {
+  color: var(--ink);
+  font-size: 11px;
+}
+
+.people-row span {
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.app-shell[data-theme='dark'] .people-list,
+.app-shell[data-theme='dark'] .people-row {
+  border-color: #303030;
+}
+
+.app-shell[data-theme='dark'] .people-row b {
+  color: #e5ede7;
+}

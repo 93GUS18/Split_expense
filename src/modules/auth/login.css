@@ -1,0 +1,139 @@
+.login-screen {
+  display: grid;
+  min-height: 100dvh;
+  place-items: center;
+  padding: 28px 24px;
+  background: #fbfaf7;
+  color: #263c34;
+}
+
+.login-content {
+  width: min(100%, 360px);
+  padding: 32px 0;
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 54px;
+  color: #263c34;
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.login-mark {
+  display: grid;
+  width: 29px;
+  height: 29px;
+  place-items: center;
+  border-radius: 8px 8px 8px 2px;
+  background: #e87932;
+  color: #fff;
+}
+
+.login-content .eyebrow {
+  color: #e87932;
+}
+
+.login-content h1 {
+  margin: 10px 0;
+  color: #263c34;
+  font-family: var(--serif);
+  font-size: 32px;
+  line-height: 1.14;
+}
+
+.login-copy {
+  margin: 0 0 24px;
+  color: #727f76;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.login-primary {
+  display: grid;
+  grid-template-columns: 24px 1fr 18px;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 48px;
+  padding: 0 13px;
+  border: 0;
+  border-radius: 7px;
+  background: #e87932;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.login-google {
+  display: grid;
+  width: 23px;
+  height: 23px;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #4285f4;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+}
+
+.login-demo {
+  display: block;
+  width: 100%;
+  min-height: 42px;
+  margin-top: 8px;
+  border: 1px solid #e7e8e1;
+  border-radius: 7px;
+  background: transparent;
+  color: #52675c;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.login-storage-note,
+.login-notice {
+  color: #8a958d;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.login-storage-note {
+  margin-top: 17px;
+}
+
+.login-notice {
+  margin: -10px 0 15px;
+  color: #9b4538;
+}
+
+.login-primary:disabled,
+.login-demo:disabled {
+  cursor: wait;
+  opacity: .65;
+}
+
+@media (prefers-color-scheme: dark) {
+  .login-screen {
+    background: #000;
+    color: #f1ede8;
+  }
+
+  .login-brand,
+  .login-content h1 {
+    color: #f1ede8;
+  }
+
+  .login-demo {
+    border-color: #343434;
+    color: #ddd5cc;
+  }
+
+  .login-copy,
+  .login-storage-note {
+    color: #a59b92;
+  }
+}

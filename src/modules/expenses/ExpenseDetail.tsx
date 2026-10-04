@@ -1,0 +1,12 @@
+import { useState } from 'react'
+import { ArrowRight, ChevronDown, X } from 'lucide-react'
+import type { Expense, Group } from '../shared/models'
+import { formatDate, money } from '../shared/utils'
+
+type Props = { expense: Expense; groups: Group[]; currency: string; onClose: () => void; onMove: (expenseId: string, groupId: string) => void }
+
+export function ExpenseDetail({ expense, groups, currency, onClose, onMove }: Props) {
+  const group = groups.find(item => item.id === expense.groupId)
+  const [moveOpen, setMoveOpen] = useState(false)
+  return <div className="modal-backdrop" onMouseDown={onClose}><section className="modal-sheet expense-detail-sheet" onMouseDown={event => event.stopPropagation()}><div className="sheet-handle" /><div className="modal-heading"><div><p className="eyebrow">{group?.name ?? 'SHARED EXPENSE'}</p><h2>{expense.title}</h2></div><button className="close-button" onClick={onClose} aria-label="Close"><X size={20} /></button></div><div className="detail-amount">{money(expense.amount, currency)}<span>{formatDate(expense.date)}</span></div><div className="paid-line"><span className="paid-avatar">{expense.payer.split(' ').map(word => word[0]).join('')}</span><span><b>{expense.payer}</b> paid the whole thing</span></div><div className="split-summary"><div className="split-summary-head"><span>Split · {expense.splitType}</span><span>{Object.keys(expense.allocations).length || group?.members.length || 0} people</span></div>{group?.members.map(person => <div className="split-person" key={person.id}><i style={{ backgroundColor: person.color }}>{person.initials.slice(0, 1)}</i><span>{person.name}</span><b>{money(expense.allocations[person.id] ?? expense.amount / Math.max(1, group.members.length), currency)}</b></div>)}</div>{expense.note && <div className="note-card"><span className="eyebrow">A LITTLE NOTE</span><p>{expense.note}</p></div>}{expense.receipt && <div className="receipt-preview"><img src={expense.receipt} alt="Attached receipt" /><span>Receipt photo</span></div>}<button className="move-button" onClick={() => setMoveOpen(value => !value)}><ArrowRight size={17} /><span>Move to another group</span><ChevronDown size={16} /></button>{moveOpen && <div className="move-list">{groups.filter(item => item.id !== expense.groupId).map(item => <button key={item.id} onClick={() => onMove(expense.id, item.id)}><span className="move-dot" style={{ backgroundColor: item.color }} />{item.name}<ArrowRight size={15} /></button>)}</div>}</section></div>
+}
